@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Hy world</h1>
+<a href = "{{url}}"> linkies </a>
+<br>
+<br>
+{% for acc in accounts %}
+	{{acc}}
+	<br>
+{% endfor %}
+<br>
+<br>
+	<form action="/auth" method="get">
+		<input type="text" name="screenName" />
+		<input type="submit" value="Authenticate" />
+	</form>
+</body>
+</html>
